@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
   
-  <title itemprop="name">archive_a: 2021/7 | 归墟茶室</title>
+  <title itemprop="name">Git常用命令 | 归墟茶室</title>
   
     <link rel="shortcut icon" href="/images/favicon.png">
   
@@ -290,130 +290,194 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
-<div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.07/img/banner/ppair.webp);" src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.02/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.07/img/banner/ppair.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      Git常用命令</h1>
+      <p class="entry-census">
+        <span>
+          <a href="github.com/FungueXY">
+            <img src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.03/img/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="github.com/FungueXY">FungueX</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-10-16<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2021年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      10月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2021/10/16/Git常用命令/">
-                          <span style="color:#0bf;">
-                          16日10:11:53</span>
-                          Git常用命令
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      09月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2021/09/21/从零开始使用Hexo-Github搭建属于自己的私人博客/">
-                          <span style="color:#0bf;">
-                          21日21:41:00</span>
-                          从零开始使用Hexo+Github搭建属于自己的私人博客
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2021/09/15/Hexo-Theme-Sakura/">
-                          <span style="color:#0bf;">
-                          15日22:16:00</span>
-                          Hexo-Theme-Sakura
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      07月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2021/07/19/hello-world/">
-                          <span style="color:#0bf;">
-                          19日22:16:00</span>
-                          Hello-world
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <blockquote>
+<p>记录一下常用的Git命令</p>
+</blockquote>
+<h2 id="部署博客过程中常用的命令"><a href="#部署博客过程中常用的命令" class="headerlink" title="部署博客过程中常用的命令"></a>部署博客过程中常用的命令</h2><pre><code>git clone &lt;url&gt;                 # 克隆指定url下的库到本地
+git init                        # 初始化本地库
+git status                      # 查看库状态
+git log                         # 查看提交历史
+git diff                        # 查看变更内容
+git add .                       # 跟踪所有改动过的文件
+git commit -m &quot;VersionName&quot;     # 提交所有更新过的文件
+git commit --amend              # 修改最后一次提交
+git push                        # 提交代码到云端
+</code></pre><h2 id="创建本地库"><a href="#创建本地库" class="headerlink" title="创建本地库"></a>创建本地库</h2><pre><code>git clone &lt;url&gt;                 # 克隆远程版本库
+git init                        # 初始化本地版本库
+</code></pre><h2 id="修改与提交相关的命令"><a href="#修改与提交相关的命令" class="headerlink" title="修改与提交相关的命令"></a>修改与提交相关的命令</h2><pre><code>git status                      # 查看状态
+git diff                        # 查看变更内容
+git add .                       # 跟踪所有改动过的文件
+git add &lt;file&gt;                  # 跟踪指定的文件
+git mv &lt;old&gt; &lt;new&gt;              # 文件改名
+git rm &lt;file&gt;                   # 删除文件
+git rm --cached &lt;file&gt;          # 停止跟踪文件但不删除
+git commit -m “VersionName”     # 提交所有更新过的文件
+git commit --amend              # 修改最后一次提交
+</code></pre><h2 id="查看历史"><a href="#查看历史" class="headerlink" title="查看历史"></a>查看历史</h2><pre><code>git log                         # 查看提交历史
+git log -p &lt;file&gt;               # 查看指定文件的提交历史
+git blame &lt;file&gt;                # 以列表方式查看指定文件的提交历史
+</code></pre><h2 id="撤销操作"><a href="#撤销操作" class="headerlink" title="撤销操作"></a>撤销操作</h2><pre><code>git reset --hard HEAD           # 撤消工作目录中所有未提交文件的修改内容
+git reset --hard &lt;version&gt;      # 撤销到某个特定版本
+git checkout HEAD &lt;file&gt;        # 撤消指定的未提交文件的修改内容
+git checkout -- &lt;file&gt;          # 同上一个命令
+git revert &lt;commit&gt;             # 撤消指定的提交分支与标签
+</code></pre><h2 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h2><pre><code>git branch                      # 显示所有本地分支
+git checkout &lt;branch/tag&gt;       # 切换到指定分支或标签
+git branch &lt;new-branch&gt;         # 创建新分支
+git branch -d &lt;branch&gt;          # 删除本地分支
+git tag                         # 列出所有本地标签
+git tag &lt;tagname&gt;               # 基于最新提交创建标签
+git tag -a &quot;v1.0&quot; -m &quot;一些说明&quot;  # -a指定标签名称，-m指定标签说明
+git tag -d &lt;tagname&gt;            # 删除标签
+git checkout master  
+git cherry-pick fd1a197         # 合并特定的commit到dev分支上
+</code></pre><h2 id="别名-alias"><a href="#别名-alias" class="headerlink" title="别名 alias"></a>别名 alias</h2><blockquote>
+<p>alias命令用来设置指令的别名。我们可以使用该命令可以将一些较长的命令进行简化。使用alias时，用户必须使用单引号 ‘ ‘ 将原来的命令引起来，防止特殊字符导致错误。具体可看<a href="https://blog.csdn.net/weialemon/article/details/82885101" title="Git短命令（alias，别名）" target="_blank" rel="noopener">这篇博文</a>。</p>
+</blockquote>
+<pre><code>git config --global alias.br=&quot;branch&quot;                 # 创建/查看本地分支
+git config --global alias.co=&quot;checkout&quot;               # 切换分支
+git config --global alias.cb=&quot;checkout -b&quot;            # 创建并切换到新分支
+git config --global alias.cm=&quot;commit -m&quot;              # 提交
+git config --global alias.st=&quot;status&quot;                 # 查看状态
+git config --global alias.pullm=&quot;pull origin master&quot;  # 拉取分支
+git config --global alias.pushm=&quot;push origin master&quot;  # 提交分支
+git config --global alias.log=&quot;git log --oneline --graph --decorate --color=always&quot; # 单行、分颜色显示记录
+git config --global alias.logg=&quot;git log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&#39; --abbrev-commit --date=relative&quot; # 复杂显示 
+</code></pre><h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><blockquote>
+<p>Git中打包文件是个简单的活，不管是打包全部文件作为release，还是只压缩更改的文件，一个命令就能搞定。</p>
+</blockquote>
+<p>而且，打包之后目录结构完全不变，这对于覆盖部署来说极其方便。</p>
+<p>git支持zip和tar两种输出格式。</p>
+<p>git打包命令会自动忽略.gitignore中指定的目录和文件，以及.git目录。</p>
+<pre><code>git archive --format=zip --output ../file.zip master    # 将master分支打包成file.zip文件，保存在上一级目录
+git archive --format=tar --output master.tar master     # 将master分支文件打包为master.tar文件。
+git archive --format=zip --output ../v1.2.zip v1.2      # 打包v1.2标签的文件，保存在上一级目录v1.2.zip文件中
+git archive --format=zip v1.2 &gt; ../v1.2.zip             # 作用同上一条命令
+</code></pre><h2 id="全局和局部配置"><a href="#全局和局部配置" class="headerlink" title="全局和局部配置"></a>全局和局部配置</h2><p>-全局配置保存在：$Home/.gitconfig</p>
+<p>-本地仓库配置保存在：.git/config</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.06/img/custom/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.06/img/custom/WeChanQR .png"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+            <div class="tag-cloud">
+              <div class="tag-cloud-title">
+              </div>
+              <div class="tag-cloud-tags">
+              <a href="/tags/Git/" style="font-size: 10px; color: #f38181">Git</a> <a href="/tags/blog/" style="font-size: 10px; color: #f38181">blog</a> <a href="/tags/github/" style="font-size: 10px; color: #f38181">github</a> <a href="/tags/hexo/" style="font-size: 20px; color: #95e1d3">hexo</a> <a href="/tags/学习/" style="font-size: 10px; color: #f38181">学习</a>
+              </div>
+            </div>
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2021/09/21/从零开始使用Hexo-Github搭建属于自己的私人博客/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.02/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.06/img/banner/comment.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.06/img/banner/comment.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                从零开始使用Hexo+Github搭建属于自己的私人博客</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "HqD9CGDm1MB7WgnJmCqLjGsa-9Nh9j0Va",
+        appKey: "smUcG8JXyT09qKd9gel36SeV",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="github.com/FungueXY" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/FungueXY/CDN@1.03/img/avatar.png" itemprop="image" alt="FungueX" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="github.com/FungueXY" itemprop="url" rel="author">FungueX</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个闲人</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">

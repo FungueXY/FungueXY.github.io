@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://funguexy.github.io/"/>
-  <updated>2021-10-01T14:10:17.523Z</updated>
+  <updated>2021-10-31T02:14:53.845Z</updated>
   <id>https://funguexy.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="https://funguexy.github.io/2021/10/16/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://funguexy.github.io/2021/10/16/Git常用命令/</id>
+    <published>2021-10-16T02:11:53.000Z</published>
+    <updated>2021-10-31T02:14:53.845Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;记录一下常用的Git命令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;部署博客过程中常用的命令&quot;&gt;&lt;a href=&quot;#部署博客过程中常用的命令&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="杂记" scheme="https://funguexy.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="Git" scheme="https://funguexy.github.io/tags/Git/"/>
+    
+      <category term="学习" scheme="https://funguexy.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始使用Hexo+Github搭建属于自己的私人博客</title>
